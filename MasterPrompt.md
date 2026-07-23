@@ -4,7 +4,7 @@ The Product Requirements Document (docs/00-product-requirements-document.md) is 
 
 Today's task is:
 
-01-project-overview.md
+02-business-requirements.md
 
 Before writing:
 
