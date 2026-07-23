@@ -4,7 +4,7 @@ The Product Requirements Document (docs/00-product-requirements-document.md) is 
 
 Today's task is:
 
-<FILE_NAME>
+01-project-overview.md
 
 Before writing:
 
