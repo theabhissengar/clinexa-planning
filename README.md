@@ -4,20 +4,28 @@ Planning and architecture documentation for **Clinexa**. This repository holds p
 
 ## Purpose
 
-Use this repo as the single place for Clinexa’s planning artifacts: requirements, architecture, domain designs, and delivery guidelines. Implementation lives in other repositories; decisions here should stay consistent across all documents.
+Use this repo as the single place for Clinexa’s planning artifacts: requirements, architecture, domain designs, and delivery guidelines. The PRD anchors decisions; the rest of `docs/` expands them. Implementation lives in other repositories; keep every document consistent with the PRD.
 
 ## How to use this repository
 
-- Treat files under [`docs/`](docs/) as the **source of truth** for planning.
+- Treat [`docs/00-product-requirements-document.md`](docs/00-product-requirements-document.md) as the **single source of truth**. All other planning docs must derive scope, terminology, and business rules from the PRD.
+- Use [`MasterPrompt.md`](MasterPrompt.md) as the **master prompt** to generate task prompts for authoring each numbered document under `docs/`. Update the “Today's task” target file, then run the prompt; do not invent scope outside the PRD.
 - When updating any document, keep related docs aligned (requirements, architecture, APIs, security, and domain specs).
 - Do **not** add implementation code here unless explicitly requested.
 - Prefer linking to the numbered doc that owns a topic instead of duplicating detail in this README.
 
 ## Documentation status
 
-The documentation set is **scaffolded and work in progress**. Numbered files under `docs/` define the intended coverage; detailed content will be authored in those files (starting with project overview and requirements). This README is a navigation entry point only.
+The documentation set is **scaffolded and work in progress**. The PRD is complete as the baseline; numbered files under `docs/` (01–24) are authored from it using prompts derived from `MasterPrompt.md`. This README is a navigation entry point only.
 
 ## Documentation index
+
+### Source of truth
+
+| Doc | Description |
+| --- | --- |
+| [00 — Product requirements document](docs/00-product-requirements-document.md) | Single source of truth for product scope, rules, and planning decisions |
+| [MasterPrompt.md](MasterPrompt.md) | Master prompt template for generating each planning document from the PRD |
 
 ### Foundations
 
